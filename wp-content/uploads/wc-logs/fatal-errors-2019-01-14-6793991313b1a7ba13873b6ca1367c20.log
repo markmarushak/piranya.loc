@@ -1,0 +1,18 @@
+2019-01-14T14:34:14+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\home.php на строке 129
+
+2019-01-14T14:37:33+00:00 CRITICAL Cannot redeclare get_category() (previously declared in C:\OSPanel\domains\pirany.loc\wp-includes\category.php:91) в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 97
+
+2019-01-14T14:39:34+00:00 CRITICAL Cannot redeclare get_category() (previously declared in C:\OSPanel\domains\pirany.loc\wp-includes\category.php:91) в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 95
+
+2019-01-14T14:39:59+00:00 CRITICAL Cannot redeclare get_category() (previously declared in C:\OSPanel\domains\pirany.loc\wp-includes\category.php:91) в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 95
+
+2019-01-14T14:41:35+00:00 CRITICAL Cannot redeclare get_category() (previously declared in C:\OSPanel\domains\pirany.loc\wp-includes\category.php:91) в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 95
+
+2019-01-14T14:45:22+00:00 CRITICAL Object of class WP_Term could not be converted to string в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 90
+
+2019-01-14T14:46:15+00:00 CRITICAL Object of class WP_Term could not be converted to string в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 90
+
+2019-01-14T14:47:27+00:00 CRITICAL Object of class WP_Term could not be converted to string в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 89
+
+2019-01-14T14:48:54+00:00 CRITICAL Object of class WP_Term could not be converted to string в C:\OSPanel\domains\pirany.loc\wp-content\themes\shop-isle\functions.php на строке 89
+
