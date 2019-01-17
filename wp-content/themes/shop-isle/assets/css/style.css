@@ -2328,6 +2328,12 @@ body.admin-bar .navbar {
 .navbar-custom .nav li > a {
 	position: relative;
 	color: rgba(255, 255, 255, 0.7);
+	transition: all .5s;
+}
+
+.navbar-custom .nav li > a:hover,
+.navbar-custom .nav li > a:focus {
+	color: #a06bff;
 }
 
 .navbar-custom .sub-menu > li > a,
@@ -2756,6 +2762,12 @@ Sections
 
 .page-header-module .module-title {
 	margin: 0;
+	color: #fff;
+	font-size: 5.5em;
+	border-bottom: 6px double;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000;
+	padding: 0 20px 10px;
 }
 
 .module-subtitle {
@@ -2777,6 +2789,12 @@ Sections
 
 .page-header-module .module-subtitle {
 	margin-top: 20px;
+	font-size: 2.1rem;
+	font-style: normal;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	text-shadow: 1px 1px 2px #000;
 }
 
 .no-results .page-header {
@@ -4756,7 +4774,7 @@ Scroll to top
 .shop_isle_header_title h1 a,
 .shop_isle_header_title .site-title a {
 	display: block;
-	color: #fff;
+	color: #673ab7;
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 24px;
@@ -4770,6 +4788,7 @@ Scroll to top
 .shop_isle_header_title .site-description a {
 	display: block;
 	color: #fff;
+	text-shadow: 0 0 4px #673ab7;
 	font-size: 12px;
 	line-height: 16px;
 }
@@ -6609,6 +6628,7 @@ WP Show Posts
 	justify-content: center;
 	text-transform: uppercase;
 	box-shadow: 4px -5px 8px -2px #2b076b;
+	box-shadow: 4px -5px 8px -2px #2b076b;
 	border-radius: 15px;
 	filter: drop-shadow(0px 20px 14px #773ab7);
 	transition: all .6s ease-in-out;
@@ -6628,4 +6648,53 @@ WP Show Posts
 .groups-item .item:hover {
 	filter: drop-shadow(0px 35px 14px #773ab7);
 	top: -15px;
+}
+.title-section {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.title-section * {
+	text-transform: uppercase;
+	color: #333;
+	position: relative;
+	display: inline-block;
+	padding: 10px 35px;
+}
+.title-section *:after,
+.title-section *:before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #333;
+	bottom: -10px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.title-section *:before
+{
+	width: 80%;
+	bottom: -25px;
+}
+
+.logo-item {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	background: #4CAF50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border-radius: 50%;
+}
+
+.description {
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 10px 5px;
 }

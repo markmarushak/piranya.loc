@@ -86,17 +86,149 @@ if ( ! empty( $shop_isle_posts_per_page ) && ( $shop_isle_posts_per_page > 0 ) )
 
 		?>
 		<section class="module">
-			<div class="container">
+			<article>
+                <div class="container">
 
-				<div class="row">
+                    <div class="row">
 
-                    <div class="groups-item">
-                        <?php echo print_r(do_action('all_category'),1)?>
+                        <div class="col-sm-12">
+
+                            <header class="title-section">
+                                <h2>
+                                    наши преимущества
+                                </h2>
+                            </header>
+
+                        </div>
                     </div>
+                </div>
+            </article>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
 
-                </div><!-- .row -->
+                            <div class="row">
 
-			</div>
+                                <div class="col-sm-2">
+
+                                    <div class="block-item">
+                                        <header>
+                                            <div class="logo-item">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                        </header>
+                                        <div class="description">
+                                            <p>Собственные производства</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2">
+
+                                    <div class="block-item">
+                                        <header>
+                                            <div class="logo-item">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                        </header>
+                                        <div class="description">
+                                            <p>Индивидуальный подход к изготовлению</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2">
+
+                                    <div class="block-item">
+                                        <header>
+                                            <div class="logo-item">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                        </header>
+                                        <div class="description">
+                                            <p>Гибкая система скодок</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2">
+
+                                    <div class="block-item">
+                                        <header>
+                                            <div class="logo-item">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                        </header>
+                                        <div class="description">
+                                            <p>Гарантия качества</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2">
+
+                                    <div class="block-item">
+                                        <header>
+                                            <div class="logo-item">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                        </header>
+                                        <div class="description">
+                                            <p>Возможность транспортировки</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2">
+
+                                    <div class="block-item">
+                                        <header>
+                                            <div class="logo-item">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                        </header>
+                                        <div class="description">
+                                            <p>Оформление всех документов</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+
+
+
+
+				<article>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <header class="title-section">
+                                    <h2>
+                                        категории
+                                    </h2>
+                                </header>
+
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="groups-item">
+                                    <?php echo print_r(do_action('all_category'),1)?>
+                                </div>
+                            </div>
+
+                        </div><!-- .row -->
+                    </div>
+                </article>
+
 		</section>
 		<!-- Blog standard end -->
 

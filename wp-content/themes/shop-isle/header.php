@@ -10,6 +10,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <?php if ( is_singular() && pings_open( get_queried_object() ) ) { ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php } ?>
@@ -44,7 +45,6 @@
 		$header_class .= 'header-with-topbar';
 	}
 	?>
-    <?= wp_page_menu()?>
 	<header class="header <?php echo esc_attr( $header_class ); ?>">
 	<?php do_action( 'shop_isle_header' ); ?>
 
