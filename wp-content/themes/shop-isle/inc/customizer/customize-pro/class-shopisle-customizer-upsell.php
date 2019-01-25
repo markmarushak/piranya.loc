@@ -72,7 +72,7 @@ final class Shopisle_Customizer_Upsell {
 	public function sections( $manager ) {
 
 		// Load custom sections.
-		require_once( trailingslashit( get_template_directory() ) . 'inc/customizer/customize-pro/class-shopisle-customizer-upsell-main.php' );
+		require_once( trailingslashit( get_template_directory() ) . 'inc/customizer/customize-pro/class-shopisle-customizer-upsell-class.main.php' );
 		require_once( trailingslashit( get_template_directory() ) . 'inc/customizer/customize-pro/class-shopisle-customizer-upsell-text.php' );
 		require_once( trailingslashit( get_template_directory() ) . 'inc/customizer/customize-pro/class-shopisle-customizer-upsell-section.php' );
 

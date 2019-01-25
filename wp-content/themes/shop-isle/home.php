@@ -34,8 +34,14 @@ if ( ! empty( $thumb_tmp ) ) {
 			<div class="row">
 
 				<div class="col-sm-10 col-sm-offset-1">
+                    <h1 class="module-title font-alt shop-isle-blog-header-title">
+                        SERF PRODUCTION
+                    </h1>
 
-					<?php
+                    <div class="module-subtitle font-serif mb-0 shop-isle-blog-header-subtitle">
+                        FREE DELIVERY INTERNATION
+                    </div>
+					<!-- <?php
 					$shop_isle_blog_header_title = get_theme_mod( 'shop_isle_blog_header_title', __( 'serf production', 'shop-isle' ) );
 					if ( ! empty( $shop_isle_blog_header_title ) ) {
 						echo '<h1 class="module-title font-alt shop-isle-blog-header-title">';
@@ -53,7 +59,7 @@ if ( ! empty( $thumb_tmp ) ) {
 						echo '<div class="module-subtitle font-serif mb-0 shop-isle-blog-header-subtitle shop_isle_hidden_if_not_customizer"></div>';
 					}
 
-					?>
+					?> -->
 
 				</div><!-- .col-sm-10 col-sm-offset-1 -->
 
@@ -86,122 +92,21 @@ if ( ! empty( $shop_isle_posts_per_page ) && ( $shop_isle_posts_per_page > 0 ) )
 
 		?>
 		<section class="module">
-			<article>
-                <div class="container">
-
-                    <div class="row">
-
-                        <div class="col-sm-12">
-
-                            <header class="title-section">
-                                <h2>
-                                    наши преимущества
-                                </h2>
-                            </header>
-
-                        </div>
-                    </div>
-                </div>
-            </article>
             <article>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12">
 
-                            <div class="row">
+                        <header class="title-section">
+                            <h2>
+                                наши преимущества
+                            </h2>
+                        </header>
 
-                                <div class="col-sm-2">
+                        <?php do_action('top')?>
 
-                                    <div class="block-item">
-                                        <header>
-                                            <div class="logo-item">
-                                                <i class="fas fa-truck"></i>
-                                            </div>
-                                        </header>
-                                        <div class="description">
-                                            <p>Собственные производства</p>
-                                        </div>
-                                    </div>
 
-                                </div>
-
-                                <div class="col-sm-2">
-
-                                    <div class="block-item">
-                                        <header>
-                                            <div class="logo-item">
-                                                <i class="fas fa-truck"></i>
-                                            </div>
-                                        </header>
-                                        <div class="description">
-                                            <p>Индивидуальный подход к изготовлению</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-sm-2">
-
-                                    <div class="block-item">
-                                        <header>
-                                            <div class="logo-item">
-                                                <i class="fas fa-truck"></i>
-                                            </div>
-                                        </header>
-                                        <div class="description">
-                                            <p>Гибкая система скодок</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-sm-2">
-
-                                    <div class="block-item">
-                                        <header>
-                                            <div class="logo-item">
-                                                <i class="fas fa-truck"></i>
-                                            </div>
-                                        </header>
-                                        <div class="description">
-                                            <p>Гарантия качества</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-sm-2">
-
-                                    <div class="block-item">
-                                        <header>
-                                            <div class="logo-item">
-                                                <i class="fas fa-truck"></i>
-                                            </div>
-                                        </header>
-                                        <div class="description">
-                                            <p>Возможность транспортировки</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-sm-2">
-
-                                    <div class="block-item">
-                                        <header>
-                                            <div class="logo-item">
-                                                <i class="fas fa-truck"></i>
-                                            </div>
-                                        </header>
-                                        <div class="description">
-                                            <p>Оформление всех документов</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                </div>
             </article>
 
 

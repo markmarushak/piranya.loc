@@ -74,3 +74,57 @@ function get_category_home()
 }
 
 add_action('all_category', 'get_category_home');
+
+add_action('top', 'get_top_section');
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
+
+function get_top_section()
+{
+    global $wpdb;
+    $table = 'wp_home_control';
+    $rows = $wpdb->get_results('SELECT * FROM '.$table);
+    $data = [];
+    ?>
+
+    <div class="col-sm-12">
+
+        <div class="row">
+
+    <?php
+
+    foreach ($rows as $row => $val)
+    {
+        $a = unserialize($val->main_data);
+        ?>
+
+
+
+
+        <div class="col-sm-2">
+
+            <div class="block-item">
+                <header>
+                    <div class="logo-item">
+                        <?php
+                        $ico = str_replace('\"','"',$a['icon']);
+                        echo $ico;
+                        ?>
+                    </div>
+                </header>
+                <div class="description">
+                    <p><?= $a['text']?></p>
+                </div>
+            </div>
+
+        </div>
+
+        <?php
+    }
+
+    ?>
+            </div>
+        </div>
+
+    <?php
+
+}

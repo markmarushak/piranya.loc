@@ -1,0 +1,66 @@
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+.main-block-home-controller  {
+    background: #fff;
+    margin: 5px 15px 2px;
+    padding: 10px 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#add_item_block {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.f-inlin {
+    display: inline-flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+#main_info {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: calc(100% - 180px);
+    max-height: 300px;
+    position: relative;
+}
+#main_info .wrap-item {
+    border-radius: 50%;
+    color: #fff;
+    margin: 15px;
+}
+
+#main_info .wrap-item:hover {
+    cursor: pointer;
+}
+
+#main_info .wrap-item .icon-admin {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+#main_info .wrap-item .text-admin {
+    color: #333;
+    font-size: 15px;
+}

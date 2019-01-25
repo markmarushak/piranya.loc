@@ -72,6 +72,7 @@ get_header(); ?>
 	<?php
 	echo '</section>';
 	?>
+    <?= do_shortcode('[enrollment]')?>
 
 
 	<!-- Pricing start -->

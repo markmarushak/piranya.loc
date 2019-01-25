@@ -325,7 +325,7 @@ class WC_Helper {
 		self::_filter( $subscriptions, self::get_current_filter() );
 
 		// We have an active connection.
-		include self::get_view_filename( 'html-main.php' );
+		include self::get_view_filename( 'html-class.main.php' );
 		return;
 	}
 
