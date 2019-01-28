@@ -72,7 +72,9 @@ get_header(); ?>
 	<?php
 	echo '</section>';
 	?>
-    <?= do_shortcode('[enrollment]')?>
+    <?php
+        require_once (plugins_url('school_register/index.php'));
+    ?>
 
 
 	<!-- Pricing start -->
