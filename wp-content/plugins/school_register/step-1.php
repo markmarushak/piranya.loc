@@ -1,7 +1,7 @@
 <?php
 require_once ('autoload.php');
 ?>
-<div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="nav-home-tab">
+<div class="tab-pane show active" id="step-1" role="tabpanel" aria-labelledby="nav-home-tab">
     <form>
         <div class="main">
 

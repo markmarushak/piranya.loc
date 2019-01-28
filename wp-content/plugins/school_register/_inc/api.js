@@ -1,14 +1,17 @@
 $(document).ready(function () {
 
     $('#zipCode').keyup(function () {
+        var data = {
+            action: 'zip_code',
+            val: $(this).val()
+        };
         $.ajax({
-            method: 'GET',
-            url: '/ajax.php',
-            data: {type: 'zipCode', val: $(this).val()},
+            url: ajaxurl,
+            data: data,
             dataType: 'JSON'
         }).done(function (data) {
             $('#school-district').html('');
-            $('#school-district').append('<option value="-">select district</option>')
+            $('#school-district').append('<option value="-">select district</option>');
             if(data.length > 0){
                 for(var i=0; i<data.length; i++){
                     $('#school-district').append('<option value="'+data[i].assoc_id+'">'+data[i].name+'</option>')
@@ -19,10 +22,10 @@ $(document).ready(function () {
 
     $('#school-district').change(function () {
         var valu = $(this).find('option:selected').val();
+        var data = {action: 'schoolD', val: valu};
         $.ajax({
-            method: 'GET',
-            url: '/ajax.php',
-            data: {type: 'schoolD', val: valu},
+            url: ajaxurl,
+            data: data,
             dataType: 'JSON'
         }).done(function (data) {
             $('#school').html('');
@@ -37,10 +40,11 @@ $(document).ready(function () {
 
     $('#school').change(function () {
         var valu = $(this).find('option:selected').val();
+        var data = {action: 'school_grade', val: valu};
         $.ajax({
             method: 'GET',
-            url: '/ajax.php',
-            data: {type: 'schools', val: valu},
+            url: ajaxurl,
+            data: data,
             dataType: 'JSON'
         }).done(function (data) {
             $('#grade').html('');

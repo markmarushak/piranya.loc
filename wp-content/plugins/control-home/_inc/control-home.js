@@ -24,13 +24,17 @@ $(document).ready(function () {
         ev.preventDefault();
         var name = $(this).find('input[name="name_section"]').val();
         var icon = $(this).find('input[name="icon"]').val();
-        var text = $(this).find('textarea').val();
+        var text_ru = $(this).find('textarea[name="text-ru"]').val();
+        var text_en = $(this).find('textarea[name="text-en"]').val();
+        var text_de = $(this).find('textarea[name="text-de"]').val();
         var data = {
             action: 'insert_home',
             main: {
                 name_section: name,
                 icon: icon,
-                text: text
+                text_ru: text_ru,
+                text_en: text_en,
+                text_de: text_de,
             }
         };
         $.post(ajaxurl,data,function (response) {
