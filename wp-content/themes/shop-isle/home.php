@@ -88,57 +88,23 @@ if ( ! empty( $shop_isle_posts_per_page ) && ( $shop_isle_posts_per_page > 0 ) )
 
 
 
-	if ( have_posts() ) {
 
 		?>
 		<section class="module">
-            <article>
-                <div class="container">
-                    <div class="row">
-
-                        <header class="title-section">
-                            <h2>
-                                наши преимущества
-                            </h2>
-                        </header>
-
-                        <?php do_action('top')?>
 
 
-                    </div>
-                </div>
-            </article>
+            <?php do_action('top')?>
 
 
 
+				<?php  do_action('category_home')?>
 
-				<article>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-
-                                <header class="title-section">
-                                    <h2>
-                                        категории
-                                    </h2>
-                                </header>
-
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="groups-item">
-                                    <?php echo print_r(do_action('all_category'),1)?>
-                                </div>
-                            </div>
-
-                        </div><!-- .row -->
-                    </div>
-                </article>
+            <?php do_action('bottom'); ?>
 
 		</section>
 		<!-- Blog standard end -->
 
 		<?php
-	}// End if().
 
 endif;
 

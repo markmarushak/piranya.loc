@@ -14,7 +14,7 @@ wp_enqueue_script('main_js');
         <article class="f-inlin">
             <h3>Добавить в группу</h3>
             <hr>
-            <form id="add_item_block">
+            <form class="add_item_block">
                 <input type="hidden" name="name_section" value="block_item">
 
                 <div class="form-group">
@@ -26,15 +26,15 @@ wp_enqueue_script('main_js');
 
                 <div class="form-group">
                     <p>Введите текст на русском</p>
-                    <textarea name="text-ru" cols="10" rows="2"></textarea>
+                    <textarea name="text-ru" cols="10" rows="2" required></textarea>
                 </div>
                 <div class="form-group">
                     <p>Введите текст на английском</p>
-                    <textarea name="text-en" cols="10" rows="2"></textarea>
+                    <textarea name="text-en" cols="10" rows="2" required></textarea>
                 </div>
                 <div class="form-group">
                     <p>Введите текст на немецком</p>
-                    <textarea name="text-de" cols="10" rows="2"></textarea>
+                    <textarea name="text-de" cols="10" rows="2" required></textarea>
                 </div>
 
                 <button>Добавить</button>
@@ -43,10 +43,44 @@ wp_enqueue_script('main_js');
         </article>
 
         <article class="f-inlin">
-            <div id="main_info">
+            <div id="block_item">
             </div>
         </article>
 
+    </section>
+
+    <section class="bottom-item">
+        <article class="f-inlin">
+            <h3>Каким образом будет проходить наше сотрудничество?</h3>
+            <hr>
+            <form class="add_item_block">
+                <input type="hidden" name="name_section" value="block_algoritm">
+
+                <div class="form-group">
+                    <label for="">Введите информацию на русском</label>
+                    <textarea name="text-ru" id="text-ru" cols="30" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Введите информацию на английском</label>
+                    <textarea name="text-en" id="text-en" cols="30" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Введите информацию на немецком</label>
+                    <textarea name="text-de" id="text-de" cols="30" rows="3" required></textarea>
+                </div>
+
+                <button>Добавить</button>
+
+            </form>
+        </article>
+
+        <article class="f-inline">
+            <div id="block_algoritm">
+
+            </div>
+        </article>
     </section>
 
 

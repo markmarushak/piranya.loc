@@ -15,11 +15,18 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php } ?>
 
+    <style>
+        #flags_language_selector img{
+            margin:1px;
+            border:1px solid #333;
+        }
+    </style>
+
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
-	<?php do_action( 'shop_isle_before_header' ); ?>
+    <div id="flags_language_selector"><?php language_selector_flags(); ?></div >
 
 	<!-- Preloader -->
 	<?php
@@ -50,6 +57,6 @@
 
 
 
-	<?php do_action( 'shop_isle_after_header' ); ?>
+<!--	--><?php //do_action( 'shop_isle_after_header' ); ?>
 
 	</header>
